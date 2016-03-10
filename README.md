@@ -4,7 +4,7 @@ This is Docker image for honeypot Cowrie (https://github.com/micheloosterhof/cow
 
 Build docker image
     
-    $ https://github.com/GovCERT-CZ/docker-cowrie
+    $ git clone https://github.com/GovCERT-CZ/docker-cowrie
     $ cd docker-cowrie/
     $ docker build -t <repository>/<name> .
     
