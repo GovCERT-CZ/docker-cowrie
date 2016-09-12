@@ -10,7 +10,7 @@ RUN apt-get update && apt-get -y dist-upgrade && \
 	cd cowrie && \
 	cp cowrie.cfg.dist cowrie.cfg && \
 	chown -R cowrie:cowrie /opt/cowrie && \
-	touch /etc/authbind/byport/22 && \\
+	touch /etc/authbind/byport/22 && \
 	chown cowrie /etc/authbind/byport/22 && \
 	chmod 500 /etc/authbind/byport/22 && \
 	chmod +x /entrypoint.sh
