@@ -3,7 +3,7 @@ ENV LC_ALL C
 ENV DEBIAN_FRONTEND noninteractive
 COPY entrypoint.sh /entrypoint.sh
 RUN apt-get update && apt-get -y dist-upgrade && \
-	apt-get -y install git authbind python-mysqldb python-twisted python-crypto python-pyasn1 python-gmpy2 python-zope.interface && \
+	apt-get -y install git authbind python-mysqldb python-twisted python-configparser python-crypto python-pyasn1 python-gmpy2 python-zope.interface && \
 	useradd -d /home/cowrie -s /bin/bash -m -U cowrie && \
 	cd /opt && \
 	git clone http://github.com/micheloosterhof/cowrie && \
